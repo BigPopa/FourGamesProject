@@ -16,6 +16,7 @@ public class FourGames
 		{
 			while(continueGame)
 				{
+					//test
 				Scanner userInput = new Scanner(System.in);
 				System.out.println("What do you want to play type the number for the game you want to play:");
 				System.out.println("(1) Tic-Tac-Toe");
