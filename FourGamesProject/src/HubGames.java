@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class FourGames
+public class HubGames
 	{
 		static String boardArray [][]= new String [3][3];
 		static int row;

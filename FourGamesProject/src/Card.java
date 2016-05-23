@@ -1,19 +1,14 @@
-import java.util.ArrayList;
-
 public class Card
 	{
 		String suit;
 		String rank;
-		int value;
-		
+		int value;		
 		public Card (String s, String r, int n)
 		{
 			suit=s;
 			rank=r;
 			value=n;	
 		}
-
-		
 		public String getSuit()
 			{
 				return suit;

@@ -1,9 +1,15 @@
+import java.awt.Canvas;
+import java.awt.Color;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class BlackJack
+import javax.swing.JFrame;
+
+public class BlackJack extends Canvas
+
 	{
+		private static final long	serialVersionUID	= 1L;
 		static boolean stopBlack = true;
 		static ArrayList <Card> deck = new  ArrayList<Card>();
 		public static void main(String[] args)
@@ -68,6 +74,14 @@ public class BlackJack
 			}
 		public static void dealPlayer()
 		{
+			BlackJack canvas = new BlackJack();
+	        JFrame frame = new JFrame();
+	        frame.setSize(500, 400);
+	        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	        frame.getContentPane().add(canvas).setBackground(Color.white);
+	        frame.setLocationRelativeTo(null); //Sets JPanel to center of screen 
+	        frame.setResizable(false);
+	        frame.setVisible(true);
 			Collections.shuffle(deck);
 			int playerTotal=0;
 			int computerTotal=0;
@@ -136,5 +150,9 @@ public class BlackJack
 							System.out.println("I had a Bust, so you WIN!");
 						}
 				}
+		}
+		public static void graphicCards()
+		{
+			
 		}
 	}
